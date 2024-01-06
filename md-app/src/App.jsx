@@ -1,8 +1,9 @@
 function App() {
+  const title = '<< Markdown Preview >>';
   return (
     <div>
       <header className="bg-slate-800 p-6">
-        <h1 className="text-3xl font-title text-green-500 text-center">Markdown Preview</h1>
+        <h1 className="text-3xl font-title text-green-500 text-center">{ title }</h1>
       </header>
       <div>
 
