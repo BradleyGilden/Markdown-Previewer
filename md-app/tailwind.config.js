@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'title': ['"Montserrat Subrayada"', 'sans-serif']
+        'title': ['"Montserrat Subrayada"', 'sans-serif'],
+        'def': ['Montserrat', 'sans-serif']
       }
     },
   },
