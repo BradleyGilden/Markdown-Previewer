@@ -35,6 +35,12 @@
   margin: 1rem 0px;
 }
 
+p > code {
+  background-color: rgb(52, 52, 52);
+  color: #4AE081;
+  padding-inline: 2px;
+}
+
 /* BLOCKQUOTES */
 #preview blockquote {
   margin: 1rem 0px;
