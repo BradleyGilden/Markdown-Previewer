@@ -117,3 +117,36 @@ tr, td {
   padding-inline: 1rem;
   border: 1px solid white;
 }
+
+/* SCROLL BARS */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4AE081; 
+  border-radius: 6px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; 
+}
+
+scrollbar {
+  width: 12px;
+  background-color: #000; 
+}
+
+scrollbar-thumb {
+  background-color: #4AE081; 
+  border-radius: 6px; 
+}
+
+scrollbar-thumb:hover {
+  background-color: #555; 
+}
