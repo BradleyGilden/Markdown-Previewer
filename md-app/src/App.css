@@ -1,0 +1,82 @@
+
+/* PLAIN TEXT */
+#preview {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 300;
+}
+
+/* HEADINGS */
+#preview h1 {
+  font-size: 2.5rem;
+  border-bottom: 2px solid #4AE081;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#preview h2 {
+  font-size: 1.8rem;
+  border-bottom: 1px solid #4AE081;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#preview h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.7rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* CODE BLOCKS */
+#preview code {
+  margin: 1rem 0px;
+}
+
+/* BLOCKQUOTES */
+#preview blockquote {
+  margin-left: 1rem;
+  padding: 10px;
+  background-color: #3d3d3d2a;
+  border-left: 4px solid #4AE081;
+  color: #4AE081;
+  font-style: italic;
+}
+
+/* LISTS */
+
+#preview ul {
+  margin-left: 2rem;
+  list-style-type: disc;
+}
+
+#preview ul ul {
+  list-style-type: square;
+}
+
+#preview ul ul ul {
+  list-style-type: disc;
+}
+
+#preview ul ul ul ul {
+  list-style-type: square;
+}
+
+#preview ol {
+  margin-left: 2rem;
+  list-style-type: decimal;
+}
+
+#preview ol ol {
+  list-style-type: lower-roman;
+}
+
+#preview ol ol ol {
+  list-style-type: decimal;
+}
+
+#preview ol ol ol ol {
+  list-style-type: lower-roman;
+}

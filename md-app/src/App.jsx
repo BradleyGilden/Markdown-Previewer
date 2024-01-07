@@ -3,7 +3,7 @@ import defaultText from './defaultMD';
 import { marked } from 'https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js';
 import hljs from 'highlight.js';
 import 'highlight.js/styles/github-dark.css';
-
+import './App.css';
 
 function App() {
   const [inputVal, setInputVal] = useState(defaultText);
@@ -51,7 +51,7 @@ const Preview = ({ inputVal }) => {
   return (
     <section className="preview w-full flex flex-col gap-2">
       <h1 className="bg-fg text-bg  text-lg sm:text-2xl font-def font-semibold p-2 text-center">{ title }</h1>
-      <div id="preview" dangerouslySetInnerHTML={{ __html: htmlContent }} className="display grow bg-bg overflow-auto text-white px-4 max-w-[50vw]">
+      <div id="preview" dangerouslySetInnerHTML={{ __html: htmlContent }} className="pt-4 grow bg-bg overflow-auto text-white px-4 max-w-[50vw]">
       </div>
     </section>
   );
