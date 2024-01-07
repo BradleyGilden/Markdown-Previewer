@@ -44,6 +44,7 @@ const Preview = ({ inputVal }) => {
   const title = 'Preview (HTML)';
   const htmlContent = marked.parse(inputVal, { breaks: true });
   console.log(htmlContent);
+  // highlight code blocks using highlight.js library
   useEffect(() => {
     const codeBlocks = document.querySelectorAll('pre code');
     codeBlocks.forEach((block) => {
@@ -54,6 +55,7 @@ const Preview = ({ inputVal }) => {
   return (
     <section className="preview w-full flex flex-col gap-2">
       <h1 className="bg-fg text-bg  text-lg sm:text-2xl font-def font-semibold p-2 text-center">{ title }</h1>
+      {/* render dynamic html */}
       <div id="preview" dangerouslySetInnerHTML={{ __html: htmlContent }} className="pt-4 grow bg-bg overflow-auto text-white px-4 max-w-[50vw]">
       </div>
     </section>
