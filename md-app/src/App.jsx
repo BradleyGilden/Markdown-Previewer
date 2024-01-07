@@ -5,7 +5,9 @@ import hljs from 'highlight.js';
 import 'highlight.js/styles/github-dark.css';
 import './App.css';
 
+// Main Body of Application
 function App() {
+  // change state of input text ot update live
   const [inputVal, setInputVal] = useState(defaultText);
   return (
     <div className="body bg-bg min-h-screen w-full">
@@ -32,6 +34,7 @@ const Editor = ({ inputVal, setInputVal }) => {
   return (
     <section className="editor w-full flex flex-col gap-2">
       <h1 className="bg-fg text-bg text-lg sm:text-2xl font-def font-semibold p-2 text-center">{ title }</h1>
+      {/* onchange method is an anonymouse function that sets the the state inputVal to the text inputs value */}
       <textarea id="editor" onChange={ (e) => { setInputVal(e.target.value) } } value={inputVal} className="display grow bg-bg overflow-auto text-white px-4 select-none focus:outline-fg py-2 text-lg"></textarea>
     </section>
   );
@@ -39,7 +42,7 @@ const Editor = ({ inputVal, setInputVal }) => {
 
 const Preview = ({ inputVal }) => {
   const title = 'Preview (HTML)';
-  const htmlContent = marked.parse(inputVal);
+  const htmlContent = marked.parse(inputVal, { breaks: true });
   console.log(htmlContent);
   useEffect(() => {
     const codeBlocks = document.querySelectorAll('pre code');

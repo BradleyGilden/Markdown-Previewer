@@ -37,6 +37,7 @@
 
 /* BLOCKQUOTES */
 #preview blockquote {
+  margin: 1rem 0px;
   margin-left: 1rem;
   padding: 10px;
   background-color: #3d3d3d2a;
@@ -79,4 +80,34 @@
 
 #preview ol ol ol ol {
   list-style-type: lower-roman;
+}
+
+/* LINKS */
+
+#preview a {
+  text-decoration: underline;
+  text-decoration-color: #4AE081;
+  color: #4AE081;
+}
+
+/* TABLES */
+
+#preview table {
+  margin: 1rem 0px;
+  border-collapse: collapse;
+  border: 1px solid white;
+}
+
+#preview table tr:nth-child(2n) {
+  background-color: hsla(142, 71%, 58%, 0.395);
+}
+
+th {
+  border: 2px solid white;
+  padding-inline: 1rem;
+}
+
+tr, td {
+  padding-inline: 1rem;
+  border: 1px solid white;
 }
