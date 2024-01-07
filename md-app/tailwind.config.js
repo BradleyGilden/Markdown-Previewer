@@ -9,6 +9,10 @@ export default {
       fontFamily: {
         'title': ['"Montserrat Subrayada"', 'sans-serif'],
         'def': ['Montserrat', 'sans-serif']
+      },
+      colors: {
+        'bg': '#18212F',
+        'fg': '#4AE081'
       }
     },
   },
