@@ -150,3 +150,8 @@ scrollbar-thumb {
 scrollbar-thumb:hover {
   background-color: #555; 
 }
+
+/* HORIZONTAL RULE */
+#preview hr {
+  border: 1px solid #4AE081;
+}
